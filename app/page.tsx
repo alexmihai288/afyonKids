@@ -1,5 +1,5 @@
 import { Container } from "@/components/Container";
-import { Navbar } from "./_components/Navbar";
+import { Navbar } from "../components/Navbar";
 
 export default function Home() {
   return <main className="">main</main>;

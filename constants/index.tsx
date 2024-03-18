@@ -20,7 +20,7 @@ export const EducationModels = [
   },
   {
     imageUrl: "/education1.jpg",
-    title: "Features of Our Program",
+    title: "Features Of Our Program",
     children: (
       <p>
         Our AKD Kids authentic education program • Is child-based. • Connects
