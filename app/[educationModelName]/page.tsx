@@ -1,9 +1,14 @@
 import { Container } from "@/components/Container";
+import { Separator } from "@/components/ui/separator";
 import { EducationModels, EducationModelsType } from "@/constants";
 import { cn } from "@/lib/utils";
 import { Atma } from "next/font/google";
 import Image from "next/image";
+import Link from "next/link";
 import React from "react";
+import { FaPhoneAlt } from "react-icons/fa";
+import { IoIosMail } from "react-icons/io";
+import { CiLocationOn } from "react-icons/ci";
 
 const atam = Atma({ subsets: ["latin"], weight: "700" });
 
@@ -44,15 +49,59 @@ const page = ({ params }: { params: { educationModelName: string } }) => {
         </div>
       </div>
       <Container>
-        <div className="mt-20 flex gap-5">
-          <Image
-            src={educationModel.imageUrl}
-            width={800}
-            height={750}
-            alt="education-1"
-          />
-          <div className="border-t-2 flex-1 border-primaryRed rounded-md p-5">
-            <h1 className={cn(atam.className, "text-3xl")}>Contact us</h1>
+        <div className="">
+          <div className="mt-20 flex gap-5">
+            <Image
+              src={educationModel.imageUrl}
+              width={700}
+              height={700}
+              alt="education-1"
+            />
+            <div className="border-t-2 flex-1 border-primaryRed rounded-md p-5 max-w-full shadow-2xl h-fit">
+              <h1 className={cn(atam.className, "text-3xl")}>Contact us</h1>
+              <Separator className="w-1/2 mt-2.5" />
+              <div className="flex items-center mt-5 text-[#6b6b84]">
+                <span className="font-semibold flex items-center gap-2.5 text-black">
+                  <FaPhoneAlt className="text-sm text-[#6b6b84]" /> Phone
+                </span>
+                <Link
+                  href="tel:0850 80 80 453"
+                  className="hover:text-primaryRed transition-colors"
+                >
+                  : 0850 80 80 453{" "}
+                </Link>
+              </div>
+              <div className="flex items-center mt-5 text-[#6b6b84]">
+                <span className="font-semibold flex items-center gap-2.5 text-black">
+                  <IoIosMail className="text-md text-[#6b6b84]" /> Email
+                </span>
+                <Link
+                  href="tel:0850 80 80 453"
+                  className="hover:text-primaryRed transition-colors"
+                >
+                  : info@akdkids.com
+                </Link>
+              </div>
+              <div className="flex items-center mt-5 text-[#6b6b84]">
+                <span className="font-semibold flex items-center gap-2.5 text-black whitespace-nowrap self-start">
+                  <CiLocationOn className="text-md text-[#6b6b84]" />
+                  İstanbul Address
+                </span>
+                <Link
+                  href="tel:0850 80 80 453"
+                  className="hover:text-primaryRed transition-colors"
+                >
+                  : Ataşehir Mah. Güney Çevre Yolu Cad. B Blok. NO:224
+                  Merkez/ELAZIĞx
+                </Link>
+              </div>
+            </div>
+          </div>
+          <div className="w-1/2 mt-10">
+            <p className={cn(atam.className, "text-4xl")}>
+              {educationModel.title}
+            </p>
+            {educationModel.children}
           </div>
         </div>
       </Container>
