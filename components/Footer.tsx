@@ -6,6 +6,9 @@ import { TiSocialFacebook } from "react-icons/ti";
 import { FaInstagram, FaPhoneAlt } from "react-icons/fa";
 import Link from "next/link";
 import { IoIosMail } from "react-icons/io";
+import { MdLocationPin } from "react-icons/md";
+import { LuDot } from "react-icons/lu";
+import { EducationModels } from "@/constants";
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
 export const Footer = () => {
@@ -13,7 +16,7 @@ export const Footer = () => {
     <div className="mt-10 py-10 flex items-center justify-between bg-[#121112] text-white">
       <Container>
         <div className="flex items-center justify-between">
-          <div className="">
+          <div className="self-start">
             <h1 className={cn(atma.className, "text-4xl")}>AKD KIDS</h1>
             <p className="my-5 max-w-sm">
               It is Turkey&apos;s largest chain of pre-school education
@@ -35,7 +38,7 @@ export const Footer = () => {
               </Link>
             </div>
           </div>
-          <div className="">
+          <div className="self-start">
             <h1
               className={cn(
                 atma.className,
@@ -47,38 +50,69 @@ export const Footer = () => {
             </h1>
             <div className="flex items-center gap-2.5 mt-5">
               <FaPhoneAlt className="text-sm text-primaryRed self-start" />
-              <div className="">
+              <Link href="tel:0850 80 80 453" className="">
                 <p className="text-lg">Phone</p>
                 <p className="text-sm">0850 80 80 453</p>
-              </div>
+              </Link>
             </div>
             <div className="flex items-center gap-2.5 mt-5">
-              <IoIosMail className="text-sm text-primaryRed self-start" />
-              <div className="">
+              <IoIosMail className="text-xl text-primaryRed self-start" />
+              <Link href="mailto:info@akdkids.com" className="">
                 <p className="text-lg">Email</p>
                 <p className="text-sm">info@akdkids.com</p>
-              </div>
+              </Link>
             </div>
           </div>{" "}
-          <div className="">
-            <h1 className={cn(atma.className, "text-4xl")}>AKD KIDS</h1>
-            <p className="my-5 max-w-sm">
-              It is Turkey&apos;s largest chain of pre-school education
-              institutions.
-            </p>
-            <div className="flex items-center gap-5">
+          <div className="self-start">
+            <h1
+              className={cn(
+                atma.className,
+                "text-4xl",
+                "border-b-2 border-b-primaryRed w-1/2 whitespace-nowrap"
+              )}
+            >
+              Quick Menu
+            </h1>
+            <div className="flex flex-col gap-2.5 mt-5">
+              {EducationModels.map((educationModel) => (
+                <Link
+                  key={educationModel.title}
+                  href={"/"}
+                  className="hover:text-primaryRed transition-colors flex items-center gap-2.5"
+                >
+                  <LuDot className="text-xl" /> {educationModel.title}
+                </Link>
+              ))}
+            </div>
+          </div>
+          <div className="self-start">
+            <h1
+              className={cn(
+                atma.className,
+                "text-4xl",
+                "border-b-2 border-b-primaryRed w-1/2 whitespace-nowrap"
+              )}
+            >
+              Branches
+            </h1>
+            <div className="flex flex-col gap-2.5 mt-5">
               <Link
-                href={"/"}
-                className="bg-primaryRed rounded-full flex items-center p-2.5"
+                href={"/branches/1"}
+                className="text-nowrap hover:text-primaryRed transition-colors flex items-center gap-2.5"
               >
-                <TiSocialFacebook className="text-2xl" />
+                <MdLocationPin /> Mareşal AKD kids
               </Link>
               <Link
-                target="_blank"
-                href={"https://www.instagram.com/afyontriovistaakdkids/"}
-                className="bg-primaryRed rounded-full flex items-center p-2.5"
+                href={"/branches/1"}
+                className="text-nowrap hover:text-primaryRed transition-colors flex items-center gap-2.5"
               >
-                <FaInstagram className="text-2xl" />
+                <MdLocationPin /> Uydukent AKD kids
+              </Link>
+              <Link
+                href={"/branches/1"}
+                className="text-nowrap hover:text-primaryRed transition-colors flex items-center gap-2.5"
+              >
+                <MdLocationPin /> Erhmen AKD kids
               </Link>
             </div>
           </div>
