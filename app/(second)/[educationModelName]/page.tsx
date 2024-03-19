@@ -38,7 +38,7 @@ const page = ({ params }: { params: { educationModelName: string } }) => {
         />
         <div className="absolute inset-0 flex items-center justify-center">
           <div className="text-white flex flex-col items-center">
-            <p className={cn(atam.className, "text-4xl")}>
+            <p className={cn(atam.className, "text-2xl sm:text-4xl")}>
               {educationModel.title}
             </p>
             <p className="text-md font-medium">
@@ -101,7 +101,9 @@ const page = ({ params }: { params: { educationModelName: string } }) => {
               <p className={cn(atam.className, "text-4xl")}>
                 {educationModel.title}
               </p>
-              <div className="font-semibold">{educationModel.children}</div>
+              <div className="font-semibold mt-2.5">
+                {educationModel.children}
+              </div>
             </div>
           </div>
           <div className="hidden md:block w-1/2 mt-10">
