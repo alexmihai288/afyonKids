@@ -10,7 +10,7 @@ import {
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-export const BranchesMenu = ({ whereClause }: { whereClause: string }) => {
+export const BranchesMenu = ({ whereClause }: { whereClause?: string }) => {
   return (
     <NavigationMenu>
       <NavigationMenuList>

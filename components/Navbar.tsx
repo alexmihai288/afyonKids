@@ -5,7 +5,7 @@ import { EducationModelMenu } from "../app/_components/EducationModelMenu";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 
-export const Navbar = ({ whereClause }: { whereClause: string }) => {
+export const Navbar = ({ whereClause }: { whereClause?: string }) => {
   return (
     <div
       className={cn(

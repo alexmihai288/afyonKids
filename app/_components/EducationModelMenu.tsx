@@ -13,7 +13,7 @@ import { cn } from "@/lib/utils";
 export const EducationModelMenu = ({
   whereClause,
 }: {
-  whereClause: string;
+  whereClause?: string;
 }) => {
   return (
     <NavigationMenu>
