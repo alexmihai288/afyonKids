@@ -2,7 +2,6 @@ import { Container } from "@/components/Container";
 import { Navbar } from "../components/Navbar";
 import { Atma } from "next/font/google";
 import { cn } from "@/lib/utils";
-import { useEffect } from "react";
 import { EducationModels } from "./_components/sections/EducationModels";
 import { OurSchools } from "./_components/sections/OurSchools";
 

@@ -13,7 +13,7 @@ export const Navbar = ({ whereClause }: { whereClause?: string }) => {
         "flex items-center justify-between w-full"
       )}
     >
-      <Link href="/">
+      <Link href="/" className="z-50">
         <Image src="/logo1.png" width={130} height={130} alt="logo-1" />
       </Link>
       <div className="flex items-center gap-5">
