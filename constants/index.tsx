@@ -2,6 +2,7 @@ export interface EducationModelsType {
   imageUrl: string;
   title: string;
   children: React.ReactNode;
+  description: string;
 }
 
 export const EducationModels = [
@@ -17,6 +18,8 @@ export const EducationModels = [
         with Bilingual Education.
       </p>
     ),
+    description:
+      "AKD Kids, as a Markalar Birligi institution, pioneers pre-school education in Turkey by implementing the European Language Portfolio. Our approach is eclectic, blending seamlessly with Bilingual Education to offer a distinctive and unparalleled educational model.",
   },
   {
     imageUrl: "/education1.jpg",
@@ -42,6 +45,8 @@ export const EducationModels = [
         child.
       </p>
     ),
+    description:
+      "Our AKD Kids education program: Child-based, nature-connected, English as integral, science-based, fostering creativity, social skill development, family involvement, tailored to individual needs, promoting self-confidence, nurturing curiosity, guided learning, fostering respect, holistic preparation for school and life. AKD Kids Program ensures inclusive, forward-looking education, prioritizing each child's learning success.",
   },
   {
     imageUrl: "/education1.jpg",
@@ -59,6 +64,8 @@ export const EducationModels = [
         meets European standards.
       </p>
     ),
+    description:
+      "At AKD Kids, English is integral to our full-time education program. Tailored to our institution, our foreign language curriculum, led by expert English-speaking staff, immerses children in English from a young age. Customized workbooks, aligned with age groups, meet European educational standards exclusively for our students.",
   },
   {
     imageUrl: "/education1.jpg",
@@ -80,6 +87,8 @@ export const EducationModels = [
         and evaluation of the European Language Portfolio.
       </p>
     ),
+    description:
+      "The European Language Portfolio (ELP) serves as a personal language tracking tool, enabling individuals to monitor their language learning journey and self-assess. Registered under selected institutions with Council of Europe endorsement, our active ELP, registered as 2012.R0006, through American Culture, stands as Turkey's sole Council-approved portfolio. Since 2004, American Culture has embedded ELP principles into its language education, guiding students through portfolio initiation and evaluation.",
   },
   {
     imageUrl: "/education1.jpg",
@@ -101,6 +110,8 @@ export const EducationModels = [
         and evaluation of the European Language Portfolio.
       </p>
     ),
+    description:
+      "The European Language Portfolio (ELP) serves as a personal record for language learning and self-assessment. Registered under selected institutions with Council of Europe approval, our active ELP is listed in the European Council database (2012.R0006), endorsed by American Culture. As the sole Turkish organization with Council of Europe-approved portfolios, American Culture has embedded ELP principles in its curriculum since 2004, aiding teachers in guiding our children through ELP initiation and evaluation.",
   },
   {
     imageUrl: "/education1.jpg",
@@ -117,5 +128,7 @@ export const EducationModels = [
         and child education recommendations.
       </p>
     ),
+    description:
+      "We view children's education as inseparable from family involvement. Thus, we craft monthly bulletins in both English and Turkish, curated by our experts for parents. These bulletins feature comprehensive programs for children, including monthly, weekly, and daily activities, music lessons, QR codes, English vocabulary, family-oriented activities, and educational recommendations for both parents and children.",
   },
 ] as EducationModelsType[];
