@@ -9,12 +9,22 @@ import {
   NavigationMenuTrigger,
 } from "@/components/ui/navigation-menu";
 import Link from "next/link";
-export const BranchesMenu = () => {
+import { cn } from "@/lib/utils";
+export const BranchesMenu = ({ whereClause }: { whereClause: string }) => {
   return (
     <NavigationMenu>
       <NavigationMenuList>
         <NavigationMenuItem>
-          <NavigationMenuTrigger className="font-bold text-md hover:text-primaryRed transition-colors">
+          <NavigationMenuTrigger
+            className={cn(
+              whereClause === "main" && "bg-inherit text-white",
+              `font-bold text-md ${
+                whereClause !== "main"
+                  ? "hover:text-primaryRed"
+                  : "hover:text-white"
+              } transition-colors`
+            )}
+          >
             Branches
           </NavigationMenuTrigger>
           <NavigationMenuContent className="py-2.5 flex flex-col font-bold">
