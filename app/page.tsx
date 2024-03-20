@@ -49,8 +49,12 @@ export default function Home() {
             className="relative left-[calc(50%-11rem)] aspect-[1155/678] w-[36.125rem] -translate-x-56 rotate-[30deg] bg-gradient-to-tr from-white to-primaryRed opacity-30 sm:left-[calc(50%-30rem)] sm:w-[72.1875rem]"
           />
         </div>
-        <OurSchools />
-        <EducationModels />
+        <div id="branches">
+          <OurSchools />
+        </div>
+        <div id="education">
+          <EducationModels />
+        </div>
       </Container>{" "}
       <Container>
         <OurEvents />
