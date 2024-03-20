@@ -5,7 +5,6 @@ import { EducationModelMenu } from "../app/_components/EducationModelMenu";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
 import { IoMdMenu } from "react-icons/io";
-import { OpenModal } from "./OpenModal";
 
 export const Navbar = ({ whereClause }: { whereClause?: string }) => {
   return (
@@ -23,9 +22,7 @@ export const Navbar = ({ whereClause }: { whereClause?: string }) => {
         <EducationModelMenu whereClause={whereClause} />
       </div>
       <div className="sm:hidden z-50">
-        <OpenModal type="mobileMenu">
-          <IoMdMenu className="text-4xl text-white" />
-        </OpenModal>
+        <IoMdMenu className="text-4xl text-white" />
       </div>
     </div>
   );

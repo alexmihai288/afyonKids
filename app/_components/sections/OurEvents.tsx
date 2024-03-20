@@ -1,8 +1,5 @@
-import { Container } from "@/components/Container";
-import { ScrollArea } from "@/components/ui/scroll-area";
 import { cn } from "@/lib/utils";
 import { Atma } from "next/font/google";
-import Image from "next/image";
 import React from "react";
 import { Josefin_Sans } from "next/font/google";
 
