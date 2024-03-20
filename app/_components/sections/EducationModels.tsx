@@ -12,6 +12,7 @@ export const EducationModels = () => {
     return str.replace(/\s+/g, "");
   };
 
+  const educationModelsToDisplay = EducationModelsConst.slice(0, -1);
   return (
     <>
       <p
@@ -23,10 +24,10 @@ export const EducationModels = () => {
         Education Model
       </p>
       <div className="bg-[#fdf6ed] rounded-sm p-5 mt-10  grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-10">
-        {EducationModelsConst.map((educationModel) => (
+        {educationModelsToDisplay.map((educationModel) => (
           <div key={educationModel.title} className="">
             <Image
-              src="/education1.jpg"
+              src={educationModel.imageUrl}
               alt="educationmodelimage"
               width={500}
               height={500}
