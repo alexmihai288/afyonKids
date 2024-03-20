@@ -1,10 +1,11 @@
 "use client";
 
 import { useMenu } from "@/hooks/use-menu";
+import { cn } from "@/lib/utils";
 import { usePathname } from "next/navigation";
 import { useEffect } from "react";
 
-const MobileNav: React.FC = () => {
+const MobileNav = ({ whereClause }: { whereClause?: string }) => {
   const { isActive, setIsActive, fromMenu, setFromMenu } = useMenu();
   const path = usePathname();
 
@@ -29,19 +30,25 @@ const MobileNav: React.FC = () => {
         }}
       >
         <div
-          className={`line1 duration-150 line w-[20px] h-[4.15px] bg-white ${
+          className={cn(
+            "line1 duration-150 line w-[20px] h-[4.15px] bg-black",
+            whereClause === "main" && "bg-white",
             isActive && "activeMenu"
-          }`}
+          )}
         />
         <div
-          className={`line2 duration-150 line w-[20px] h-[4.15px] bg-white ${
+          className={cn(
+            "line2 duration-150 line w-[20px] h-[4.15px] bg-black",
+            whereClause === "main" && "bg-white",
             isActive && "activeMenu"
-          }`}
+          )}
         />
         <div
-          className={`line3 duration-150 line w-[20px] h-[4.15px] bg-white ${
+          className={cn(
+            "line3 duration-150 line w-[20px] h-[4.15px] bg-black",
+            whereClause === "main" && "bg-white",
             isActive && "activeMenu"
-          }`}
+          )}
         />
       </div>
     </div>

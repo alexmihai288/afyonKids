@@ -18,7 +18,7 @@ const MobileMenu = () => {
   return (
     <div
       ref={ref}
-      className={`z-50 absolute left-0 right-0 top-0 bottom-0 duration-150 p-2.5 ${
+      className={`z-50 absolute left-0 right-0 top-0 bottom-0 duration-150 ${
         !isActive
           ? "z-50 h-0 opacity-0 pointer-events-none"
           : "text-ddtWhite grainy h-[180px] w-full z-50 rounded-b-lg"

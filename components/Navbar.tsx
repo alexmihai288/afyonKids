@@ -23,7 +23,7 @@ export const Navbar = ({ whereClause }: { whereClause?: string }) => {
         <EducationModelMenu whereClause={whereClause} />
       </div>
       <MobileMenu />
-      <MobileNav />
+      <MobileNav whereClause={whereClause}/>
     </div>
   );
 };
