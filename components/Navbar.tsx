@@ -4,8 +4,8 @@ import { BranchesMenu } from "../app/_components/BranchesMenu";
 import { EducationModelMenu } from "../app/_components/EducationModelMenu";
 import Link from "next/link";
 import { cn } from "@/lib/utils";
-import { IoMdMenu } from "react-icons/io";
-import { MobileMenu } from "./MobileMenu";
+import MobileMenu from "./MobileMenu/MobileMenu";
+import MobileNav from "./MobileMenu/MobileMenuNav";
 
 export const Navbar = ({ whereClause }: { whereClause?: string }) => {
   return (
@@ -15,7 +15,7 @@ export const Navbar = ({ whereClause }: { whereClause?: string }) => {
         "flex items-center justify-between w-full"
       )}
     >
-      <Link href="/" className="z-50 w-fit">
+      <Link href="/" className="z-10 w-fit">
         <Image src="/logo1.png" width={130} height={130} alt="logo-1" />
       </Link>
       <div className="hidden sm:flex items-center gap-5 ">
@@ -23,6 +23,7 @@ export const Navbar = ({ whereClause }: { whereClause?: string }) => {
         <EducationModelMenu whereClause={whereClause} />
       </div>
       <MobileMenu />
+      <MobileNav />
     </div>
   );
 };
