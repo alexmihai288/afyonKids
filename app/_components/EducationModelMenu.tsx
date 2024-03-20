@@ -69,7 +69,7 @@ export const EducationModelMenu = ({
               European Language Portfolio
             </Link>
             <Link
-              href={"/branches/1"}
+              href={"/OurFamilyNewsletter"}
               className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
             >
               Our Family Newsletter

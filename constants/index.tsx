@@ -22,7 +22,7 @@ export const EducationModels = [
       "AKD Kids, as a Markalar Birligi institution, pioneers pre-school education in Turkey by implementing the European Language Portfolio. Our approach is eclectic, blending seamlessly with Bilingual Education to offer a distinctive and unparalleled educational model.",
   },
   {
-    imageUrl: "/education1.jpg",
+    imageUrl: "/education2.jpg",
     title: "Features Of Our Program",
     children: (
       <p>
@@ -49,7 +49,7 @@ export const EducationModels = [
       "Our AKD Kids education program: Child-based, nature-connected, English as integral, science-based, fostering creativity, social skill development, family involvement, tailored to individual needs, promoting self-confidence, nurturing curiosity, guided learning, fostering respect, holistic preparation for school and life. AKD Kids Program ensures inclusive, forward-looking education, prioritizing each child's learning success.",
   },
   {
-    imageUrl: "/education1.jpg",
+    imageUrl: "/education3.jpg",
     title: "Our Collaboration",
     children: (
       <p>
@@ -91,7 +91,7 @@ export const EducationModels = [
       "The European Language Portfolio (ELP) serves as a personal language tracking tool, enabling individuals to monitor their language learning journey and self-assess. Registered under selected institutions with Council of Europe endorsement, our active ELP, registered as 2012.R0006, through American Culture, stands as Turkey's sole Council-approved portfolio. Since 2004, American Culture has embedded ELP principles into its language education, guiding students through portfolio initiation and evaluation.",
   },
   {
-    imageUrl: "/education1.jpg",
+    imageUrl: "/education4.jpg",
     title: "Our Foreign Language Education",
     children: (
       <p>
@@ -114,7 +114,7 @@ export const EducationModels = [
       "The European Language Portfolio (ELP) serves as a personal record for language learning and self-assessment. Registered under selected institutions with Council of Europe approval, our active ELP is listed in the European Council database (2012.R0006), endorsed by American Culture. As the sole Turkish organization with Council of Europe-approved portfolios, American Culture has embedded ELP principles in its curriculum since 2004, aiding teachers in guiding our children through ELP initiation and evaluation.",
   },
   {
-    imageUrl: "/education1.jpg",
+    imageUrl: "/education5.jpg",
     title: "European Language Portfolio",
     children: (
       <p>
@@ -130,5 +130,23 @@ export const EducationModels = [
     ),
     description:
       "We view children's education as inseparable from family involvement. Thus, we craft monthly bulletins in both English and Turkish, curated by our experts for parents. These bulletins feature comprehensive programs for children, including monthly, weekly, and daily activities, music lessons, QR codes, English vocabulary, family-oriented activities, and educational recommendations for both parents and children.",
+  },
+  {
+    imageUrl: "/education6.jpg",
+    title: "Our Family Newsletter",
+    children: (
+      <p>
+        We cannot think of children independent of family education on this path
+        we proceed with the understanding that education as a whole. For this
+        reason, we prepare two bulletins, one in English and one in Turkish,
+        with our experts for our parents every month. In this bulletin, there
+        are monthly, weekly and daily programs for children, the music they
+        learn and QR codes, the English words we learn, examples of activities
+        that can be done with the family in parallel with the school, and family
+        and child education recommendations.
+      </p>
+    ),
+    description:
+      "We integrate family education into our holistic approach to child development. Monthly bulletins, in English and Turkish, curated by our experts, provide comprehensive programs, including music lessons, English vocabulary, and family activities, fostering a collaborative learning environment between home and school.",
   },
 ] as EducationModelsType[];

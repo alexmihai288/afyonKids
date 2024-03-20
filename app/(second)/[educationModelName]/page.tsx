@@ -30,8 +30,8 @@ const page = ({ params }: { params: { educationModelName: string } }) => {
     <main>
       <div className="relative">
         <Image
-          src={"/education1.jpg"}
-          className="w-full h-[550px] object-cover brightness-75"
+          src={educationModel.imageUrl}
+          className="w-full h-[550px] object-cover brightness-50"
           width={8000}
           height={8000}
           alt="education-image"
