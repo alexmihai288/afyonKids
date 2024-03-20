@@ -2,7 +2,6 @@ import type { Metadata } from "next";
 import { Roboto } from "next/font/google";
 import "./globals.css";
 import { Footer } from "@/components/Footer";
-import { ModalProvider } from "@/components/providers/ModalProvider";
 
 const roboto = Roboto({ subsets: ["latin"], weight: "400" });
 
@@ -21,7 +20,6 @@ export default function RootLayout({
       <body className={roboto.className}>
         {children}
         <Footer />
-        <ModalProvider />
       </body>
     </html>
   );
