@@ -12,6 +12,10 @@ import { EducationModels } from "@/constants";
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
 export const Footer = () => {
+  const removeSpacesAndConcatenate = (str: string) => {
+    return str.replace(/\s+/g, "");
+  };
+
   return (
     <div className="mt-10 py-10 flex items-center justify-between bg-[#121112] text-white">
       <Container>
@@ -81,7 +85,9 @@ export const Footer = () => {
                 {EducationModels.map((educationModel) => (
                   <Link
                     key={educationModel.title}
-                    href={"/"}
+                    href={`/${removeSpacesAndConcatenate(
+                      educationModel.title
+                    )}`}
                     className="hover:text-primaryRed transition-colors flex items-center gap-2.5"
                   >
                     <LuDot className="text-xl" /> {educationModel.title}

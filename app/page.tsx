@@ -52,10 +52,10 @@ export default function Home() {
         <OurSchools />
         <EducationModels />
       </Container>{" "}
-      <Gallery />
       <Container>
         <OurEvents />
       </Container>
+      <Gallery />
     </main>
   );
 }
