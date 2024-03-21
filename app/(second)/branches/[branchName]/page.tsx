@@ -56,7 +56,13 @@ const page = ({ params }: { params: { branchName: string } }) => {
         />
       </div>
 
-      <Image src="/curly.svg" alt="curly arrow" width={100} height={100} />
+      <Image
+        src="/curly.svg"
+        alt="curly arrow"
+        width={100}
+        height={100}
+        className="mx-auto"
+      />
     </Container>
   );
 };
