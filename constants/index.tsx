@@ -181,16 +181,16 @@ export const EducationModelnfo = [
 
 export const GalleryImages = [
   {
-    imageUrl: "/gallery/g1.jpg",
+    imageUrl: "https://utfs.io/f/23dc4045-d00a-4890-aef1-d3cd8e32b975-2i2.jpg",
   },
   {
-    imageUrl: "/gallery/g2.jpg",
+    imageUrl: "https://utfs.io/f/ef55b659-95b8-4912-8c16-6813fe24aec7-2i3.jpg",
   },
   {
-    imageUrl: "/gallery/g5.jpg",
+    imageUrl: "https://utfs.io/f/d47bd248-efa6-4164-b02c-8b1df824b716-2i6.jpg",
   },
   {
-    imageUrl: "/gallery/g3.jpg",
+    imageUrl: "https://utfs.io/f/028ccfa9-e5a5-4936-b0e1-c3a6539c2084-2i4.jpg",
   },
   {
     imageUrl: "/gallery/g4.jpg",

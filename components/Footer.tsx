@@ -36,7 +36,7 @@ export const Footer = () => {
                 </Link>
                 <Link
                   target="_blank"
-                  href={"https://www.instagram.com/afyontriovistaakdkids/"}
+                  href={"https://www.instagram.com/afyonkarahisarakdkids/"}
                   className="bg-primaryRed rounded-full flex items-center p-2.5"
                 >
                   <FaInstagram className="text-2xl" />
