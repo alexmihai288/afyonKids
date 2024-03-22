@@ -141,14 +141,7 @@ const page = ({ params }: { params: { branchName: string } }) => {
               <BsChatRightTextFill className="text-6xl text-[#fa6450]" />
               <div className="">
                 <p className={cn(atma.className, "text-2xl")}>Email</p>
-                <p className="text-[#70747f] text-xl">
-                  Afyon{" "}
-                  {params.branchName === "1"
-                    ? "Mareşal"
-                    : params.branchName === "2"
-                    ? "Uydukent"
-                    : "Erhmen"}
-                </p>
+                <p className="text-[#70747f] text-xl">maresal@akdkids.com</p>
               </div>
             </div>
           </div>

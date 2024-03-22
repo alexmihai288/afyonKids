@@ -76,7 +76,7 @@ const page = ({ params }: { params: { educationModelName: string } }) => {
                   <IoIosMail className="text-md text-[#6b6b84]" /> Email
                 </span>
                 <Link
-                  href="tel:0850 80 80 453"
+                  href="mailto:info@akdkids.com"
                   className="hover:text-primaryRed transition-colors"
                 >
                   : info@akdkids.com
@@ -87,13 +87,10 @@ const page = ({ params }: { params: { educationModelName: string } }) => {
                   <CiLocationOn className="text-md text-[#6b6b84]" />
                   İstanbul Address
                 </span>
-                <Link
-                  href="tel:0850 80 80 453"
-                  className="hover:text-primaryRed transition-colors"
-                >
+                <div className="hover:text-primaryRed transition-colors">
                   : Ataşehir Mah. Güney Çevre Yolu Cad. B Blok. NO:224
                   Merkez/ELAZIĞx
-                </Link>
+                </div>
               </div>
             </div>
 
