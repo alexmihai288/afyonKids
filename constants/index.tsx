@@ -11,6 +11,10 @@ export interface EducationModelType {
   email: string;
 }
 
+export interface GalleryImagesType {
+  imageUrl: string;
+}
+
 export const EducationModels = [
   {
     imageUrl: "/education1.jpg",
@@ -174,3 +178,39 @@ export const EducationModelnfo = [
     email: "triovista@akdkids.com",
   },
 ] as EducationModelType[];
+
+export const GalleryImages = [
+  {
+    imageUrl: "/gallery/g1.jpg",
+  },
+  {
+    imageUrl: "/gallery/g2.jpg",
+  },
+  {
+    imageUrl: "/gallery/g5.jpg",
+  },
+  {
+    imageUrl: "/gallery/g3.jpg",
+  },
+  {
+    imageUrl: "/gallery/g4.jpg",
+  },
+  {
+    imageUrl: "/gallery/g6.jpg",
+  },
+  {
+    imageUrl: "/gallery/g7.jpg",
+  },
+  {
+    imageUrl: "/gallery/g8.jpg",
+  },
+  {
+    imageUrl: "/gallery/g9.jpg",
+  },
+  {
+    imageUrl: "/gallery/g10.jpg",
+  },
+  {
+    imageUrl: "/gallery/g11.jpg",
+  },
+] as GalleryImagesType[];
