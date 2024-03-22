@@ -4,6 +4,7 @@ import { Atma } from "next/font/google";
 import Image from "next/image";
 import React from "react";
 import { IoIosPin } from "react-icons/io";
+import { FaCheckCircle } from "react-icons/fa";
 
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
@@ -45,7 +46,12 @@ const page = ({ params }: { params: { branchName: string } }) => {
             <span className="text-[#a1c643]">K</span>
             <span className="text-[#f6d72e]">i</span>
             <span className="text-[#e6252b]">d</span>
-            <span className="text-[#2195d2]">s</span> / Afyon Mareshal
+            <span className="text-[#2195d2]">s</span> / Afyon{" "}
+            {params.branchName === "1"
+              ? "Mareşal"
+              : params.branchName === "2"
+              ? "Uydukent"
+              : "Erhmen"}
           </div>
         </div>
         <Image
@@ -63,6 +69,24 @@ const page = ({ params }: { params: { branchName: string } }) => {
         height={100}
         className="mx-auto"
       />
+
+      <div className="mt-20 flex items-center">
+        <div className="space-y-5">
+          <div className={cn(atma.className, "flex items-center gap-5")}>
+            <FaCheckCircle className="text-[#fc477e] text-2xl" />
+            <p>European Language Portfolio</p>
+          </div>
+          <div className={cn(atma.className, "flex items-center gap-5")}>
+            <FaCheckCircle className="text-[#b250fe] text-2xl" />
+            <p>Individual Program</p>
+          </div>
+          <div className={cn(atma.className, "flex items-center gap-5")}>
+            <FaCheckCircle className="text-[#1ab9ff] text-2xl" />
+            <p>Enriched Academic Enviroment</p>
+          </div>
+        </div>
+        <div></div>
+      </div>
     </Container>
   );
 };

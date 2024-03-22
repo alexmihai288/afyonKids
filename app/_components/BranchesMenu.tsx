@@ -29,19 +29,19 @@ export const BranchesMenu = ({ whereClause }: { whereClause?: string }) => {
           </NavigationMenuTrigger>
           <NavigationMenuContent className="py-2.5 flex flex-col font-bold">
             <Link
-              href={"/branches/1"}
+              href="/branches/1"
               className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
             >
               Mareşal AKD kids
             </Link>
             <Link
-              href={"/branches/1"}
+              href="/branches/2"
               className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
             >
               Uydukent AKD kids
             </Link>
             <Link
-              href={"/branches/1"}
+              href="/branches/3"
               className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
             >
               Erhmen AKD kids
