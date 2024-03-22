@@ -1,4 +1,3 @@
-import { Container } from "@/components/Container";
 import { Navbar } from "../components/Navbar";
 import { Atma } from "next/font/google";
 import { cn } from "@/lib/utils";
@@ -6,6 +5,7 @@ import { EducationModels } from "./_components/sections/EducationModels";
 import { OurSchools } from "./_components/sections/OurSchools";
 import { Gallery } from "./_components/sections/Gallery";
 import { OurEvents } from "./_components/sections/OurEvents";
+import { Container } from "@/components/Container";
 
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
@@ -13,10 +13,9 @@ export default function Home() {
   return (
     <main className="relative z-20">
       <video
-        src="/main-video.mp4"
+        src="/ad1.mp4"
         autoPlay
         loop
-        muted
         preload="auto"
         playsInline
         className="object-cover w-full h-full min-h-[90vh] md:h-[60vh] max-h-[100vh] brightness-75"

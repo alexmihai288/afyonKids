@@ -20,7 +20,7 @@ export const OurEvents = () => {
       <div className="flex flex-col">
         <div className="rounded-sm p-5 mt-10 flex flex-col lg:flex-row md:items-center gap-20">
           <video
-            src="/Secondary-Video.mp4"
+            src="/ad3.mp4"
             autoPlay
             loop
             muted

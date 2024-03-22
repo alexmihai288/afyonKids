@@ -80,7 +80,7 @@ const page = ({ params }: { params: { branchName: string } }) => {
         alt="curly arrow"
         width={100}
         height={100}
-        className="mx-auto hidden md:block mt-20"
+        className="mx-auto hidden md:block"
       />
 
       <div className="mt-20 flex flex-col gap-20 lg:gap-0 lg:flex-row lg:justify-between">
