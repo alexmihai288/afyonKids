@@ -9,10 +9,13 @@ import { FaMapLocationDot } from "react-icons/fa6";
 import { BsTelephoneOutboundFill } from "react-icons/bs";
 import { MdLocationPin } from "react-icons/md";
 import { BsChatRightTextFill } from "react-icons/bs";
+import { EducationModelnfo, EducationModels } from "@/constants";
 
 const atma = Atma({ subsets: ["latin"], weight: "700" });
 
 const page = ({ params }: { params: { branchName: string } }) => {
+  const branch = EducationModelnfo[Number(params.branchName) - 1];
+
   return (
     <Container>
       <div className="flex items-center justify-center gap-5 mt-20">
@@ -20,7 +23,7 @@ const page = ({ params }: { params: { branchName: string } }) => {
         <div>
           <p className="text-4xl text-[#70747f]">Address</p>
           <p className="text-xl text-[#1b0238] font-bold mt-2.5">
-            Mareşal Fevzi Çakmak Mah. 447 St. No:17 - Merkez/AFYON
+            {branch.location}
           </p>
         </div>
       </div>
@@ -60,7 +63,7 @@ const page = ({ params }: { params: { branchName: string } }) => {
               ? "Mareşal"
               : params.branchName === "2"
               ? "Uydukent"
-              : "Erhmen"}
+              : "Triovista"}
           </div>
         </div>
         <Image
@@ -77,7 +80,7 @@ const page = ({ params }: { params: { branchName: string } }) => {
         alt="curly arrow"
         width={100}
         height={100}
-        className="mx-auto hidden md:block"
+        className="mx-auto hidden md:block mt-20"
       />
 
       <div className="mt-20 flex flex-col gap-20 lg:gap-0 lg:flex-row lg:justify-between">
@@ -115,7 +118,7 @@ const page = ({ params }: { params: { branchName: string } }) => {
                     ? "Mareşal"
                     : params.branchName === "2"
                     ? "Uydukent"
-                    : "Erhmen"}
+                    : "Triovista"}
                 </p>
               </div>
             </div>
@@ -123,7 +126,7 @@ const page = ({ params }: { params: { branchName: string } }) => {
               <BsTelephoneOutboundFill className="text-6xl text-[#de769f]" />
               <div className="">
                 <p className={cn(atma.className, "text-2xl")}>Telephone</p>
-                <p className="text-[#70747f] text-xl">0507 626 26 90</p>
+                <p className="text-[#70747f] text-xl">{branch.phoneNumber}</p>
               </div>
             </div>
           </div>{" "}
@@ -133,7 +136,7 @@ const page = ({ params }: { params: { branchName: string } }) => {
               <div className="">
                 <p className={cn(atma.className, "text-2xl")}>Address</p>
                 <p className="text-[#70747f] text-xl max-w-[150px]">
-                  Mareşal Fevzi Çakmak Mah. 447 St. No:17 - Merkez/AFYON
+                  {branch.location}
                 </p>
               </div>
             </div>
@@ -141,7 +144,7 @@ const page = ({ params }: { params: { branchName: string } }) => {
               <BsChatRightTextFill className="text-6xl text-[#fa6450]" />
               <div className="">
                 <p className={cn(atma.className, "text-2xl")}>Email</p>
-                <p className="text-[#70747f] text-xl">maresal@akdkids.com</p>
+                <p className="text-[#70747f] text-xl">{branch.email}</p>
               </div>
             </div>
           </div>

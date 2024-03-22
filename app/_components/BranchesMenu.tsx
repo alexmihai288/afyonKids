@@ -44,7 +44,7 @@ export const BranchesMenu = ({ whereClause }: { whereClause?: string }) => {
               href="/branches/3"
               className="text-nowrap p-2.5 hover:text-primaryRed transition-colors"
             >
-              Erhmen AKD kids
+              Triovista AKD kids
             </Link>
           </NavigationMenuContent>
         </NavigationMenuItem>

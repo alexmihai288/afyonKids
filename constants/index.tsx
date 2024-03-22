@@ -5,6 +5,12 @@ export interface EducationModelsType {
   description: string;
 }
 
+export interface EducationModelType {
+  location: string;
+  phoneNumber: string;
+  email: string;
+}
+
 export const EducationModels = [
   {
     imageUrl: "/education1.jpg",
@@ -150,3 +156,21 @@ export const EducationModels = [
       "We integrate family education into our holistic approach to child development. Monthly bulletins, in English and Turkish, curated by our experts, provide comprehensive programs, including music lessons, English vocabulary, and family activities, fostering a collaborative learning environment between home and school.",
   },
 ] as EducationModelsType[];
+
+export const EducationModelnfo = [
+  {
+    location: "Mareşal Fevzi Çakmak Mah. 447 St. No:17 - Merkez/AFYON",
+    phoneNumber: "0507 626 26 90",
+    email: "maresal@akdkids.com",
+  },
+  {
+    location: "Erkmen Cumhuriyet Mah. Fidankent St. No:3 Erkmen/AFYON",
+    phoneNumber: "0555 161 55 10",
+    email: "uykent@akdkids.com",
+  },
+  {
+    location: "Triovista Mansions, 2nd Stage - Center/AFYON",
+    phoneNumber: "0555 161 55 10",
+    email: "triovista@akdkids.com",
+  },
+] as EducationModelType[];
