@@ -13,7 +13,7 @@ export default function Home() {
   return (
     <main className="relative z-20">
       <video
-        src="/ad1.mp4"
+        src="/main-video.mp4"
         autoPlay
         loop
         preload="auto"
