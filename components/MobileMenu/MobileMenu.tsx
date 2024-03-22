@@ -24,7 +24,9 @@ const MobileMenu = () => {
           : "text-ddtWhite grainy h-[180px] w-full z-50 rounded-b-lg"
       }`}
     >
-      <Image src="/logo2.png" alt="logo" width={150} height={150} />
+      <Link href="/" onClick={() => setIsActive(false)}>
+        <Image src="/logo2.png" alt="logo" width={150} height={150} />
+      </Link>
       <div className="flex flex-col justify-center gap-5 h-full text-[#2194d2]">
         <Link
           onClick={() => setIsActive(false)}
